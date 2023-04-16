@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-58e16708","path":"/guide/feedback.html","title":"初衷","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"问题反馈","slug":"问题反馈","link":"#问题反馈","children":[]},{"level":2,"title":"赞助","slug":"赞助","link":"#赞助","children":[]}],"git":{},"filePathRelative":"guide/feedback.md"}');export{e as data};

@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-557721a9","path":"/daily/baiduyun/","title":"百度云下载变态加速","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"准备工具","slug":"准备工具","link":"#准备工具","children":[]},{"level":2,"title":"开始","slug":"开始","link":"#开始","children":[]}],"git":{},"filePathRelative":"daily/baiduyun/README.md"}');export{e as data};

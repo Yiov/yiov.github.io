@@ -1,34 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="generator" content="VuePress 2.0.0-beta.68">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.14" />
     <style>
       :root {
         --c-bg: #fff;
       }
+
       html.dark {
         --c-bg: #22272e;
       }
-      html, body {
+
+      html,
+      body {
         background-color: var(--c-bg);
       }
     </style>
     <script>
-      const userMode = localStorage.getItem('vuepress-color-scheme');
-			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
-				document.documentElement.classList.toggle('dark', true);
-			}
+      const userMode = localStorage.getItem('vuepress-color-scheme')
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+
+      if (userMode === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (userMode === 'dark' || systemDarkMode) {
+        document.documentElement.classList.toggle('dark', true)
+        document.documentElement.dataset.theme = 'dark'
+      }
     </script>
     <link rel="icon" href="/images/logo.png"><title>VuePress</title><meta name="description" content="本人已转用VitePress，可能会无限期停更">
-    <link rel="preload" href="/assets/style-c302dd7a.css" as="style"><link rel="stylesheet" href="/assets/style-c302dd7a.css">
-    <link rel="modulepreload" href="/assets/app-20913d04.js"><link rel="modulepreload" href="/assets/404.html-2d47c27f.js"><link rel="modulepreload" href="/assets/404.html-f9875e7b.js">
-    <link rel="prefetch" href="/assets/index.html-14294d93.js" as="script"><link rel="prefetch" href="/assets/index.html-c726b215.js" as="script"><link rel="prefetch" href="/assets/assets.html-71e17487.js" as="script"><link rel="prefetch" href="/assets/beautification.html-01399c47.js" as="script"><link rel="prefetch" href="/assets/components.html-a564dbd4.js" as="script"><link rel="prefetch" href="/assets/configuration.html-7c0541a9.js" as="script"><link rel="prefetch" href="/assets/docsearch.html-7c62a4d4.js" as="script"><link rel="prefetch" href="/assets/frontmatter.html-9187ef06.js" as="script"><link rel="prefetch" href="/assets/getting-started.html-4ef8d340.js" as="script"><link rel="prefetch" href="/assets/markdown.html-098a2918.js" as="script"><link rel="prefetch" href="/assets/page.html-d755af8b.js" as="script"><link rel="prefetch" href="/assets/plugin.html-00bcf2dc.js" as="script"><link rel="prefetch" href="/assets/index.html-2ffa45c0.js" as="script"><link rel="prefetch" href="/assets/update.html-c3c02d1a.js" as="script"><link rel="prefetch" href="/assets/index.html-9718e2f2.js" as="script"><link rel="prefetch" href="/assets/index.html-86efb3de.js" as="script"><link rel="prefetch" href="/assets/assets.html-edccc236.js" as="script"><link rel="prefetch" href="/assets/beautification.html-071a9387.js" as="script"><link rel="prefetch" href="/assets/components.html-1dee17e8.js" as="script"><link rel="prefetch" href="/assets/configuration.html-9094d527.js" as="script"><link rel="prefetch" href="/assets/docsearch.html-d7efcf28.js" as="script"><link rel="prefetch" href="/assets/frontmatter.html-1526ccfc.js" as="script"><link rel="prefetch" href="/assets/getting-started.html-4f82238a.js" as="script"><link rel="prefetch" href="/assets/markdown.html-00daa10b.js" as="script"><link rel="prefetch" href="/assets/page.html-a1e1351b.js" as="script"><link rel="prefetch" href="/assets/plugin.html-8bb92caf.js" as="script"><link rel="prefetch" href="/assets/index.html-df704ab4.js" as="script"><link rel="prefetch" href="/assets/update.html-2b53a5d8.js" as="script"><link rel="prefetch" href="/assets/style-e9220a04.js" as="script"><link rel="prefetch" href="/assets/docsearch-1d421ddb.js" as="script"><link rel="prefetch" href="/assets/index-82585c84.js" as="script">
+    <link rel="preload" href="/assets/style-DXJkrnQh.css" as="style"><link rel="stylesheet" href="/assets/style-DXJkrnQh.css">
+    <link rel="modulepreload" href="/assets/app-D31wT-F8.js"><link rel="modulepreload" href="/assets/404.html-BVkkFADP.js">
+    <link rel="prefetch" href="/assets/index.html-Bl8hwgxT.js" as="script"><link rel="prefetch" href="/assets/index.html-ClOR8_K7.js" as="script"><link rel="prefetch" href="/assets/assets.html-C3zN4NUC.js" as="script"><link rel="prefetch" href="/assets/beautification.html-8l87irFY.js" as="script"><link rel="prefetch" href="/assets/components.html-YjMpdZtw.js" as="script"><link rel="prefetch" href="/assets/configuration.html-l3nqI84D.js" as="script"><link rel="prefetch" href="/assets/docsearch.html-CmWpLVtp.js" as="script"><link rel="prefetch" href="/assets/frontmatter.html-DLBLMq0-.js" as="script"><link rel="prefetch" href="/assets/getting-started.html-C49-JtWi.js" as="script"><link rel="prefetch" href="/assets/markdown.html-B2B-vwNE.js" as="script"><link rel="prefetch" href="/assets/page.html-DcfMD7Vn.js" as="script"><link rel="prefetch" href="/assets/plugin.html-CHiYtJ30.js" as="script"><link rel="prefetch" href="/assets/index.html-BvCPPGdW.js" as="script"><link rel="prefetch" href="/assets/update.html-DHw0aSwV.js" as="script"><link rel="prefetch" href="/assets/style-l0sNRNKZ.js" as="script"><link rel="prefetch" href="/assets/docsearch-l0sNRNKZ.js" as="script"><link rel="prefetch" href="/assets/index-DWGeGWcS.js" as="script">
   </head>
   <body>
-    <div id="app"><!--[--><div class="theme-container"><main class="page"><div class="theme-default-content"><h1>404</h1><blockquote>There&#39;s nothing here.</blockquote><a href="/" class="">Take me home</a></div></main></div><!----><!--]--></div>
-    <script type="module" src="/assets/app-20913d04.js" defer></script>
+    <div id="app"><!--[--><div class="vp-theme-container" data-v-0c01291c><main class="page" data-v-0c01291c><div class="theme-default-content" data-v-0c01291c><h1 data-v-0c01291c>404</h1><blockquote data-v-0c01291c>How did we get here?</blockquote><a class="route-link" href="/" data-v-0c01291c>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-D31wT-F8.js" defer></script>
   </body>
 </html>
